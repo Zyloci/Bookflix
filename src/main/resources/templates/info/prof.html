@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title> books </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1><u>&nbsp;&nbsp;&nbsp;&nbsp;Bookflix</u></h1>
+    <h2>
+        <button type="lista" th:onclick="backMenuFunction()">Menu</button>
+        <span id="list"></span>
+        <br>
+    </h2>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;Usuarios</h2>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Senha</th>
+          </tr>
+          <tr th:each="prof : ${info}">
+            <td th:text="${prof.userID}">1</td>
+            <td th:text="${prof.userName}">2</td>
+            <td th:text="${prof.senha}">3</td>
+          </tr>
+        </table>
+        <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
