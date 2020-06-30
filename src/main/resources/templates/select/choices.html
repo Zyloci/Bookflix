@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title> selection </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1><u>&nbsp;&nbsp;&nbsp;&nbsp;Bookflix</u></h1>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;Menu</h2>
+      <li>
+        <button type="lista" th:onclick="listFunction()">Livros Disponiveis</button>
+        <span id="list"></span>
+        <br>
+      </li>
+      <li>
+        <button type="list" th:onclick="infoFunction()">Usuarios</button>
+        <span id="lis"></span>
+        <br>
+      </li>   
+      <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
