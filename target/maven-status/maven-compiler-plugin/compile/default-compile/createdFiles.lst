@@ -1,0 +1,8 @@
+Group9\Bookflix\Repositories\LivroRep.class
+Group9\Bookflix\Services\BookflixBoot.class
+Group9\Bookflix\BookflixApplication.class
+Group9\Bookflix\Services\LivroController.class
+Group9\Bookflix\Repositories\UserRep.class
+Group9\Bookflix\Entities\Usuario.class
+Group9\Bookflix\Services\UserController.class
+Group9\Bookflix\Entities\Livro.class
