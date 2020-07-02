@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import Group9.Bookflix.Repositories.LivroRep;
 
 @Controller
-public class LivroController {
+public class LivroController implements Controllers {
     
     private final LivroRep livroRep;
 
@@ -19,5 +19,8 @@ public class LivroController {
     public String getBooks(Model model){
         model.addAttribute("books", livroRep.findAll());
         return "books/list";
+    }
+    public boolean isOn(){
+        return true;
     }
 }
